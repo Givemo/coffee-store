@@ -6,6 +6,8 @@
     <title>Coffee Store</title>
     <link rel="stylesheet" href="styles.css" type="text/css" />
     <script defer src="scripts/script.js"></script>
+    <script src="scripts/videoplayer.js"></script>
+    <script src="scripts/canvasChart.js"></script>
   </head>
   <body>
     <header>
@@ -78,6 +80,45 @@
         </p>
         <p class="productarticleprice">€10</p>
       </div>
+
+      <div>
+        <video
+          width="350"
+          height="240"
+          class="coffeevideoplayer"
+          id="videoplayer"
+          poster="Images/logo.jpg"
+          ></video></video>
+        >
+          <source
+            src="video/movie.mp4"
+            type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
+          />
+          <source
+            src="video/movie.ogg"
+            type='video/ogg; codecs="theora, vorbis"'
+          />
+          Sadly your browser has no support for video…
+        </video>
+        <div id="controls">
+          <div id="errorDiv" style="color: red"></div>
+          <button id="slowerButton">Slower</button>
+          <button id="backButton">Rewind</button>
+          <button id="playButton">Play</button>
+          <button id="forwardButton">Forward</button>
+          <button id="fasterButton">Faster</button>
+          <button id="muteButton">Mute</button>
+          <br />
+          <br />
+        </div>
+      </div>
     </section>
+
+    <div id="salesCanvasGraph">
+      <canvas id="barChart" height="800" width="750">
+        Sorry, your browser doesn't support canvas, therefore you can't see this
+        chart! Upgrade
+      </canvas>
+    </div>
   </body>
 </html>

@@ -6,7 +6,7 @@ body {
 }
 
 @font-face {
-  font-family: header-font;
+  font-family: headerfont;
   src: url(./fonts/Lobster_1.3.otf);
 }
 
@@ -99,7 +99,7 @@ nav ul li {
 }
 
 #headername {
-  font-family: header-font;
+  font-family: headerfont;
   font-size: 40px;
   color: #603813;
   padding: 15px;
@@ -328,4 +328,50 @@ footer {
   color: green;
   font-weight: bold;
   padding-top: 15px;
+}
+
+/*Checkout page*/
+.textlabel {
+  text-align: left;
+  font-size: 14px;
+  margin: 0px;
+  display: block;
+  width: 250px;
+  padding: 2px 5px;
+  float: left;
+}
+
+.textinput {
+  width: 300px;
+  height: 22px;
+  border: 1px solid #888888;
+}
+
+fieldset {
+  padding: 0px;
+  border: none;
+}
+
+fieldset > div {
+  border: 2px solid #888888;
+}
+
+.submitbutton {
+}
+
+/*Find us page styles*/
+.maptostore {
+  float: left;
+  width: 1000px;
+}
+
+#map {
+  float: left;
+  width: 65%;
+  height: 600px;
+  margin: 25px;
+}
+
+#driving-directions {
+  float: left;
 }
